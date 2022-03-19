@@ -136,9 +136,7 @@ export default {
         },
 
         confereCadastroCompleto(){
-          if (this.nome == null){
-            return true;
-          }
+          return true;
         },
     },
 };
