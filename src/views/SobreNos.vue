@@ -1,5 +1,175 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section>
+    <v-row class="hackaton">
+      <h1 class="titulo1">O projeto:</h1>
+      <p>
+        Foi desenvolvido em março de 2022 durante o Hackaton Decola Luna - 10º
+        Edição realizado pela empresa Iteris.
+        <br />
+        Se trata de uma aplicação Single Page Web desenvolvida através do
+        framework Vue.js com o foco em mobile, trazendo responsividade e
+        praticidade à navegação do usuário.
+        <br />
+        Apresenta como funcionalidades: a exibição de sites que oferecem
+        ferramentas como pesquisa de notícias, checagem de fatos, contratação de
+        especialistas e canal de denúncias e sugestões; as notícias falsas e
+        verdadeiras em destaque e um canal de envio de sugestões de possíveis
+        fake news.
+      </p>
+      <v-img
+        class="logoiteris"
+        src="https://www.iteris.com.br/Iteris.Site.Cms.Theme/img/logo.svg"
+        max-height="300"
+        max-width="300"
+      ></v-img>
+    </v-row>
+    <v-row class="desenvolvedores mt-8">
+      <template>
+
+        <v-card class="bloco" width="380" height="350" tile>
+          <v-row align="end">
+            <v-col align-self="start" class="mt-4" cols="12">
+              <v-avatar class="profile" color="grey" size="150">
+                <v-img
+                  src="https://avatars.githubusercontent.com/u/97711262?v=4"
+                ></v-img>
+              </v-avatar>
+            </v-col>
+            <v-col class="py-2">
+              <v-list-item color="black">
+                <v-list-item-content>
+                  <v-list-item-title class="text-h6">
+                    Amanda Cristina Souza Barreto
+                  </v-list-item-title>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#424242" dark a href="https://github.com/amandacbarreto"> Github </v-btn>
+                  </v-list-item-subtitle>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#01579B" dark a href="https://www.linkedin.com/in/amanda-barreto-5126a5136/"> LinkedIn </v-btn>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-col>
+          </v-row>
+        </v-card>
+
+        <v-card class="bloco" width="380" height="350" tile>
+          <v-row align="end">
+            <v-col align-self="start" class="mt-4" cols="12">
+              <v-avatar class="profile" color="grey" size="150">
+                <v-img
+                  src="https://avatars.githubusercontent.com/u/50000777?v=4"
+                ></v-img>
+              </v-avatar>
+            </v-col>
+            <v-col class="py-2">
+              <v-list-item color="black">
+                <v-list-item-content>
+                  <v-list-item-title class="text-h6">
+                    Érika Hortência Pereira Cardoso
+                  </v-list-item-title>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#424242" dark a href="https://github.com/erika-hortencia"> Github </v-btn>
+                  </v-list-item-subtitle>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#01579B" dark a href="https://www.linkedin.com/in/érika-hp-cardoso"> LinkedIn </v-btn>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-col>
+          </v-row>
+        </v-card>
+
+        <v-card class="bloco" width="380" height="350" tile>
+          <v-row align="end">
+            <v-col align-self="start" class="mt-4" cols="12">
+              <v-avatar class="profile" color="grey" size="150">
+                <v-img
+                  src="https://avatars.githubusercontent.com/u/97862719?v=4"
+                ></v-img>
+              </v-avatar>
+            </v-col>
+            <v-col class="py-2">
+              <v-list-item color="black">
+                <v-list-item-content>
+                  <v-list-item-title class="text-h6">
+                    Jainy Estefany Martins
+                  </v-list-item-title>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#424242" dark a href="https://github.com/JainyMartins"> Github </v-btn>
+                  </v-list-item-subtitle>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#01579B" dark a href="https://www.linkedin.com/in/jainy-estefany-martins-173443b2/"> LinkedIn </v-btn>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-col>
+          </v-row>
+        </v-card>
+
+        <v-card class="bloco" width="380" height="350" tile>
+          <v-row align="end">
+            <v-col align-self="start" class="mt-4" cols="12">
+              <v-avatar class="profile" color="grey" size="150">
+                <v-img
+                  src="https://avatars.githubusercontent.com/u/97711262?v=4"
+                ></v-img>
+              </v-avatar>
+            </v-col>
+            <v-col class="py-2">
+              <v-list-item color="black">
+                <v-list-item-content>
+                  <v-list-item-title class="text-h6">
+                    Amanda Cristina Souza Barreto
+                  </v-list-item-title>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#424242" dark> Github </v-btn>
+                  </v-list-item-subtitle>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#01579B" dark> LinkedIn </v-btn>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-col>
+          </v-row>
+        </v-card>
+
+        <v-card class="bloco" width="380" height="350" tile>
+          <v-row align="end">
+            <v-col align-self="start" class="mt-4" cols="12">
+              <v-avatar class="profile" color="grey" size="150">
+                <v-img
+                  src="https://avatars.githubusercontent.com/u/97711262?v=4"
+                ></v-img>
+              </v-avatar>
+            </v-col>
+            <v-col class="py-2">
+              <v-list-item color="black">
+                <v-list-item-content>
+                  <v-list-item-title class="text-h6">
+                    Amanda Cristina Souza Barreto
+                  </v-list-item-title>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#424242" dark> Github </v-btn>
+                  </v-list-item-subtitle>
+                  <v-list-item-subtitle class="text-center mt-2">
+                    <v-btn rounded color="#01579B" dark> LinkedIn </v-btn>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-col>
+          </v-row>
+        </v-card>
+      </template></v-row
+    >
+  </section>
 </template>
+
+<style scoped>
+.titulo1 {
+  text-align: center;
+}
+.img1 {
+  margin-top: 5px;
+}
+</style>
