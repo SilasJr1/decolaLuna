@@ -1,54 +1,42 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import MeuInicio from '../views/MeuInicio.vue'
+import ListaVerificacao from '../views/ListaVerificacao.vue'
+import FiqueAtento from '../views/FiqueAtento.vue'
+import SobreNos from '../views/SobreNos.vue'
+import SugestoesUsuario from '../views/SugestoesUsuario.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/MeuInicio.vue')
+    name: 'MeuInicio',
+    component: MeuInicio
+  },
+  {
+    path: '/listaverificacao',
+    name: 'ListaVerificacao',
+    component: ListaVerificacao
+  },
+  {
+    path: '/fiqueatento',
+    name: 'FiqueAtento',
+    component: FiqueAtento
+  },
+  {
+    path: '/sugestoesusuario',
+    name: 'SugestoesUsuario',
+    component: SugestoesUsuario
   },
   {
     path: '/sobrenos',
-    name: 'sobrenos',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/SobreNos.vue')
-  },
-  {
-    path: '/lista-verificacao',
-    name: 'lista-verificacao',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ListaVerificacao.vue')
-  },
-  {
-    path: '/fique-atento',
-    name: 'fique-atento',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/FiqueAtento.vue')
-  },
-  {
-    path: '/sugestoes-usuarios',
-    name: 'sugestoes-usuarios',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/SugestoesUsuario.vue')
+    name: 'SobreNos',
+    component: SobreNos
   },
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
   routes
 })
 
