@@ -2,10 +2,9 @@
   
   <div class="CadastroSugestao">
     <h1 class="text-h5 text-left mb-3 mt-5">Ficou em dúvida se alguma notícia é fato ou fake? <br> Pergunte pra gente!</h1>
-      <!--h2 class="text-h5 text-center mb-3 mt-5">Cadastro</h2-->
         <v-form class="registro-box" ref="form" >
 
-                      <p>Nome</p>
+          <p>Nome</p>
                       <v-text-field v-model="nome" label="Fulano de Tal" required>
                       </v-text-field>
 
@@ -21,7 +20,7 @@
                       <p>Diga a notícia que você está em dúvida</p>
                       <v-text-field v-model="noticia" label="" required>
                         <!--quando clica na label, o texto fica com uma margem, diferente das labels de nome e e-mail-->
-                      </v-text-field>
+                      </v-text-field>            
             
       </v-form>  
       
@@ -50,7 +49,7 @@
                           </v-btn>
                         
                       </div>   
-  </div>
+    </div>
 
 
 </template>
