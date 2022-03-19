@@ -84,6 +84,41 @@
                     >
                       Enviar
                     </v-btn>
+                    <v-dialog 
+                  v-model="dialog"
+                  persistent
+                  max-width="600px"
+                >
+                  <template v-slot:activator="{ on, attrs }" >
+                    <v-btn
+                      color="primary"
+                      dark
+                      v-bind="attrs"
+                      v-on="on"
+                      @click="enviar"
+                    >
+                      Enviar
+                    </v-btn>
+                  </template>
+                  <v-card >
+                    <v-card-title>
+                      <h5 class="text-h5 center">Cadastro incompleto!</h5>
+                    </v-card-title>
+                    <v-card-text>
+                      <div class="text--primary">Por favor, preencha as informações obrigatórias.</div>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click= "fechaDialog"
+                      >
+                        Fechar
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
               </div>
 
           </div>  
@@ -136,7 +171,15 @@ export default {
         },
 
         confereCadastroCompleto(){
-          return true;
+            if(
+            this.nome == "" ||
+            this.email == ""||
+            this.referencia == ""||
+            this.noticia == ""){
+              return false;
+            }else{
+              return true;
+            }
         },
     },
 };
