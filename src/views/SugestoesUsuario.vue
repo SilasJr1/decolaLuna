@@ -1,26 +1,25 @@
 <template>
   
   <div class="CadastroSugestao">
-    <h1 class="text-h5 text-left mb-3 mt-5">Ficou em dúvida se alguma notícia é fato ou fake? <br> Pergunta pra gente!</h1>
+    <h1 class="text-h5 text-left mb-3 mt-5">Ficou em dúvida se alguma notícia é fato ou fake? <br> Pergunte pra gente!</h1>
       <!--h2 class="text-h5 text-center mb-3 mt-5">Cadastro</h2-->
         <v-form class="registro-box" ref="form" >
-                      <v-text-field v-model="nome" label="Usuário" required>
-                      </v-text-field>
-            
-                      <v-text-field v-model="email" label="E-mail" required>
-                      </v-text-field>
-                      
-                      <v-text-field v-model="referencia" label="Como você teve acesso a essa informação?" required>
-                      </v-text-field>
-            
-                      <v-text-field v-model="noticia" label="Diga a notícia que você está em dúvida" required>
+
+                      <p>Nome</p>
+                      <v-text-field v-model="nome" label="Fulano de Tal" required>
                       </v-text-field>
 
-                      <v-text-field v-model="referencia" label="Como você teve acesso a essa informação?" required> 
+                      <p>E-mail para contato</p>
+                      <v-text-field v-model="email" label="E-mail" required>
+                      </v-text-field>
+
+                      <p>Como você teve acesso a essa informação?</p>
+                      <v-text-field v-model="referencia" label="WhatsApp, Facebook ou outros" required> 
                         <!--quando clica na label, o texto fica com uma margem, diferente das labels de nome e e-mail-->
                       </v-text-field>
 
-                      <v-text-field v-model="noticia" label="Diga a notícia que você está em dúvida" required>
+                      <p>Diga a notícia que você está em dúvida</p>
+                      <v-text-field v-model="noticia" label="" required>
                         <!--quando clica na label, o texto fica com uma margem, diferente das labels de nome e e-mail-->
                       </v-text-field>
             
