@@ -26,7 +26,7 @@
     </v-row>
     <v-row class="desenvolvedores">
       <template>
-        <v-card class="bloco" width="380" height="350" tile>
+        <v-card class="bloco" style="height: 350px; width: 90vw;" tile>
           <v-row align="end">
             <v-col align-self="start" class="mt-4" cols="12">
               <v-avatar class="profile" color="grey" size="150">
@@ -69,7 +69,7 @@
           </v-row>
         </v-card>
 
-        <v-card class="bloco" width="380" height="350" tile>
+        <v-card class="bloco" style="height: 350px; width: 90vw;" tile>
           <v-row align="end">
             <v-col align-self="start" class="mt-4" cols="12">
               <v-avatar class="profile" color="grey" size="150">
@@ -112,7 +112,7 @@
           </v-row>
         </v-card>
 
-        <v-card class="bloco" width="380" height="350" tile>
+        <v-card class="bloco" style="height: 350px; width: 90vw;" tile>
           <v-row align="end">
             <v-col align-self="start" class="mt-4" cols="12">
               <v-avatar class="profile" color="grey" size="150">
@@ -155,7 +155,7 @@
           </v-row>
         </v-card>
 
-        <v-card class="bloco" width="380" height="350" tile>
+        <v-card class="bloco" style="height: 350px; width: 90vw;" tile>
           <v-row align="end">
             <v-col align-self="start" class="mt-4" cols="12">
               <v-avatar class="profile" color="grey" size="150">
@@ -168,7 +168,7 @@
               <v-list-item color="black">
                 <v-list-item-content>
                   <v-list-item-title class="text-h6">
-                    Nayara Priscilla de Almeida Vasconcelos
+                    Nayara de Almeida Vasconcelos
                   </v-list-item-title>
                   <v-list-item-subtitle class="text-center mt-2">
                     <v-btn
@@ -198,7 +198,7 @@
           </v-row>
         </v-card>
 
-        <v-card class="bloco" width="380" height="350" tile>
+        <v-card class="bloco" style="height: 350px; width: 90vw;" tile>
           <v-row align="end">
             <v-col align-self="start" class="mt-4" cols="12">
               <v-avatar class="profile" color="grey" size="150">
@@ -279,7 +279,7 @@ section {
 
 .desenvolvedores {
   margin-top: 40px;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   display: flex;
   direction: row;
   align-content: center;
