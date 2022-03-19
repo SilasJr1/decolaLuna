@@ -30,10 +30,10 @@
 
 <h4>Funcionalidades</h3>
 
-<p>Conscientização: Nossa tela inicial apresenta o que são Fake News e como podemos combatê-las.
-Lista de sites: Quer conhecer fontes confiáveis para checar notícias? Separamos algumas ferramentas nas quais você pode confiar.
-Sugestões do usuário: Recebeu alguma notícia e não sabe se é falsa ou verdadeira? Nosso WebApp recebe a sua dúvida e analisa para você.
-Fique atento: Saiba mais sobre as principais notícias da semana e se elas são reais ou falsas.
+<p>Conscientização: Nossa tela inicial apresenta o que são Fake News e como podemos combatê-las. <br>
+Lista de sites: Quer conhecer fontes confiáveis para checar notícias? Separamos algumas ferramentas nas quais você pode confiar. <br>
+Sugestões do usuário: Recebeu alguma notícia e não sabe se é falsa ou verdadeira? Nosso WebApp recebe a sua dúvida e analisa para você. <br>
+Fique atento: Saiba mais sobre as principais notícias da semana e se elas são reais ou falsas. <br>
 Sobre Nós: Conheça mais sobre a Hackathon e os desenvolvedores.</p>
 
 <a id="tecnologias" align="center"></a>
