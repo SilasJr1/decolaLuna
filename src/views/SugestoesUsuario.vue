@@ -1,7 +1,7 @@
 <template>
   <v-container>  
   <div class="CadastroSugestao">
-    <h1 class="text-h5 text-left mb-3 mt-5">Ficou em dúvida se alguma notícia é <strong>fato</strong> ou <strong>fake</strong>? <br> Pergunte pra gente!</h1>
+    <h1 class="text-h5 text-center mb-3 mt-5">Ficou em dúvida se alguma notícia é <strong>fato</strong> ou <strong>fake</strong>? <br> Pergunte pra gente!</h1>
         
         <v-form class="registro-box" ref="form">
 
