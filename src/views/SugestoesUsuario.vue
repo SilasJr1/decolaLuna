@@ -72,6 +72,7 @@
                         <div class="text--primary">Por favor, preencha as informações obrigatórias.</div>
                       </v-card-text>
                     </div>
+
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn
@@ -85,13 +86,10 @@
                   </v-card>
                 </v-dialog>
               </div>
-
-
-          </div>  
           
-          </div>
+          </div> <!--botoes-->
       </v-container>
-    </div>
+    </div> <!--cadastrosugestao-->
   </v-container>
 </template>
 
