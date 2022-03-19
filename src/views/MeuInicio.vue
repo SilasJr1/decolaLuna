@@ -8,9 +8,9 @@
       <p class="texto text-justify">
         O termo "Fake News" vem do inglês — fake (falso/falsa) e news (notícia) — e significa "notícia falsa". 
         Na prática,  são boatos, rumores ou notícias imprecisas publicadas geralmente na internet. 
-        Esse tipo de conteúdo contribui para a proliferação de mentiras na sociedade, podendo ter sérias consequências.
+        Esse tipo de conteúdo contribui para a proliferação de mentiras na sociedade, podendo ter graves consequências.
       </p>
-      <p class="text-justify">Abaixo estão alguma dicas para se prevenir e evitar sair espalhando fake news por aí.</p>
+      <p class="text-justify">Abaixo estão algumas dicas para se prevenir e evitar sair espalhando fake news por aí.</p>
     </v-container>
     
     <v-container class="cards">
