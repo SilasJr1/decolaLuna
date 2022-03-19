@@ -327,6 +327,7 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 25px;
+  margin-bottom: 25px;
   margin-left: -35px;
 }
 </style>
