@@ -7,7 +7,7 @@
     <spacer></spacer>
     <v-container>
       <p class="text-justify">
-        O termo fakenews vem do inglês — fake (falso/falsa) e news (notícia) — e significa "notícia falsa".
+        O termo "Fake News" vem do inglês — Fake (falso/falsa) e News (notícia) — e significa "notícia falsa".
       </p>
     </v-container>
     
@@ -75,9 +75,9 @@ export default {
       show: false,
       IndexSelecionado: null,
       passos:[
-        {titulo:'Cheque a fonte', subtitulo:'Prefira fontes confiáveis', texto:'Muitos sites publicadores de fakenews têm nomes parecidos com endereços de sites de notícias. Portanto, avalie o endereço e verifique se o site é confiável. Também veja se outros conteúdos do site também são duvidosos.', imagem:'source.png'},
+        {titulo:'Cheque a fonte', subtitulo:'Prefira fontes confiáveis', texto:'Muitos sites publicadores de fake news têm nomes parecidos com endereços de sites de notícias. Portanto, avalie o endereço e verifique se o site é confiável. Também veja se outros conteúdos do site também são duvidosos.', imagem:'source.png'},
         {titulo:'Preste atenção na data de publicação', subtitulo:'Dê preferencia a notícias atuais', texto:'Veja se a notícia ainda é relevante e está atualizada.', imagem:'past.png'},
-        {titulo:'Muitos erros de portuquês? Cuidado', subtitulo:'Observe a escrita', texto:'Sites que divulgam fakenews costumam apresentar erros de português, de formatação, letras em caixa alta e uso exagerado de pontuação.', imagem:'spell-check.png'},
+        {titulo:'Muitos erros de portuquês? Cuidado', subtitulo:'Observe a escrita', texto:'Sites que divulgam fake news costumam apresentar erros de português, de formatação, letras em caixa alta e uso exagerado de pontuação.', imagem:'spell-check.png'},
         {titulo:'Leia além do título', subtitulo:'Manchetes podem ser enganosas', texto:'Leia a notícia até o fim. Muitas vezes, o título e o subtítulo não condizem com o texto.', imagem:'mobile-phone.png'},
         {titulo:'Pesquise em outros sites', subtitulo:'Utilize mais de uma fonte', texto:'Duvide se você receber uma notícia bombástica que não esteja em outros sites de notícia.', imagem:'search-engine.png'},
         {titulo:'Será que foi piada?', subtitulo:'Cuidado com sites de humor', texto:'Alguns sites de humor usam da ironia para fazer piada.', imagem:'laugh.png'},
