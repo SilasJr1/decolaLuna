@@ -11,29 +11,14 @@
         :src="noticia.imagemURL"
       >
         <v-card-title>
-          <!-- TÍTULO DA MANCHETE -->
           {{ noticia.titulo }}
         </v-card-title>
       </v-img>
       <v-card-subtitle
         class="pb-0"
-        v-if="noticia.realOuFalso === 'FALSO'"
-        color="#B71C1C"
       >
-        <!-- É FATO OU FAKE - ÍCONE DE CHECK OU X -->
-        &#10005;
-        {{ noticia.realOuFalso }}
+        <strong> &#10005; Falso</strong>
       </v-card-subtitle>
-      <v-card-subtitle
-        color="#1B5E20" 
-        class="pb-0"
-        v-else
-      >
-        <!-- É FATO OU FAKE - ÍCONE DE CHECK OU X -->
-        &#10005;
-        {{ noticia.realOuFalso }}
-      </v-card-subtitle>
-
       <v-card-text class="text--primary">
         <div>
           <!-- RESUMO -->
@@ -45,10 +30,9 @@
           color="primary"
           text
           a
-          href="noticia.link"
+          :href="noticia.link"
           target="_blank"
         >
-        <!-- LINK PARA A MATÉRIA -->
           LER MATÉRIA COMPLETA
         </v-btn>
       </v-card-actions>
@@ -63,33 +47,19 @@ export default {
     return {
       listaDeNoticias: [{
         id: 1,
-        imagemURL: 'https://img.olhardigital.com.br/wp-content/uploads/2018/09/20180903133856-860x450.jpg',
-        titulo: 'É #FAKE que EUA admitiram ter laboratórios de armas biológicas na Ucrânia em 2022',
-        data: '01/02/2022',
-        realOuFalso: 'REAL',
-        icone: 'U+02715',
-        resumo: 'Lorem Ips',
-        link: 'https://www.toptal.com/designers/htmlarrows/symbols/ballot-box-with-x/',
+        imagemURL: 'https://www.e-farsas.com/wp-content/uploads/flor_marte.jpg',
+        titulo: 'A sonda Curiosity encontrou uma flor em Marte?',
+        resumo: 'No dia 24 de fevereiro de 2022, a câmera MAHLI da sonda Curiosity fotografou uma formação esquisita no solo de Marte, uma coisa que parece um coral ou uma “planta de pedra” e isso alimentou inúmeras teorias a respeito da existência de vida fora da Terra. A verdade mesmo é que, infelizmente, não se trata de um ser vivo e tampouco de um vegetal fossilizado! A apelidada “Blackthorn Salt” (algo como “sal de espinheiro”, em inglês) é apenas uma estrutura chamada cristalina diagenética, formada pela sedimentação de minerais em reação à presença da água.',
+        link: 'https://www.e-farsas.com/a-sonda-curiosity-encontrou-uma-flor-em-marte.html',
       },
       {
         id: 2,
-        imagemURL: 'https://img.olhardigital.com.br/wp-content/uploads/2018/09/20180903133856-860x450.jpg',
-        titulo: 'É #FAKE que EUA admitiram ter laboratórios de armas biológicas na Ucrânia em 2022',
-        data: '01/02/2022',
-        realOuFalso: 'FALSO',
-        icone: '&#10003;',
-        resumo: 'Lorem Ips fbakujfdsk anfhuifhsigb aofgihbnzidgfbsigb anbfkiugbfsifb andfdhbngfksjb abnfujbf',
-        link: 'https://www.toptal.com/designers/htmlarrows/symbols/ballot-box-with-x/',
+        imagemURL: 'https://www.e-farsas.com/wp-content/uploads/morto_revive-1068x704.jpg',
+        titulo: 'Homem dado como morto pela COVID em Parauapebas ressuscita no necrotério! Será verdade?',
+        resumo: 'A primeira vez que esse vídeo surgiu nas redes sociais foi no final de janeiro de 2022 e, na ocasião, o caso teria ocorrido no centro da cidade russa de Tver. Acontece que tudo não passou de um vazamento dos bastidores das gravações de uma série russa de comédia chamada “И снова здравствуйте!” (ou Olá de Novo, em russo). Estrelada por Andrei Merzlikin, a série gira em torno de um gângster que decide mudar de vida e abrir uma confeitaria. Só que ele acaba morrendo antes de realizar seu desejo, revivendo pouco tempo depois de morto.',
+        link: 'https://www.e-farsas.com/homem-dado-como-morto-pela-covid-em-parauapebas-ressuscita-no-necroterio-sera-verdade.html',
       },
-      { id: 3,
-        imagemURL: 'https://img.olhardigital.com.br/wp-content/uploads/2018/09/20180903133856-860x450.jpg',
-        titulo: 'É #FAKE que EUA admitiram ter laboratórios de armas biológicas na Ucrânia em 2022',
-        data: '01/02/2022',
-        realOuFalso: 'FALSO',
-        icone: 'outro;',
-        resumo: 'Lorem Ips',
-        link: 'https://www.toptal.com/designers/htmlarrows/symbols/ballot-box-with-x/',
-      }],
+      ],
     }
   }
 }

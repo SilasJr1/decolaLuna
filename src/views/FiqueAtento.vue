@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style scoped>
+.noticias {
+  margin-top: 5%;
+}
 
 </style>
 
