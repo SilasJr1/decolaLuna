@@ -19,7 +19,25 @@
 
           <v-text-field v-model="noticia" hint="Invasão alienígena, outros" label="Diga a notícia que você está em dúvida*" required>
           <!--quando clica na label, o texto fica com uma margem, diferente das labels de nome e e-mail-->
-          </v-text-field>            
+          </v-text-field>   
+
+
+        <v-container fluid>
+        <v-row>
+          <v-col cols="12">
+            <v-textarea
+              v-model="form.bio"
+              color="teal"
+            >
+              <template v-slot:label>
+                <div>
+                  Bio <small>(optional)</small>
+                </div>
+              </template>
+            </v-textarea>
+          </v-col> 
+        </v-row>
+        </v-container>      
             
       </v-form> 
       
@@ -56,7 +74,7 @@
               <v-card>
                 <v-card-title>
                   <span class="text-h5 center">Sugestão enviada!</span>
-                  <h5 class="textoDialog left">Obrigada por nos ajudar no combate às fake news!
+                  <h5 class="text-s1 left">Obrigada por nos ajudar no combate às fake news!
                     Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.
                   </h5>
                 </v-card-title>
@@ -80,9 +98,6 @@
 
         
         </div>
-
-
-
     </div>
 </template>
 
