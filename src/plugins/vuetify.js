@@ -15,5 +15,6 @@ export default new Vuetify({
                 secondary: "#E91E63",
             },
         },
+        options: { customProperties: true }
     },
 });
