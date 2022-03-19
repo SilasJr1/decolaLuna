@@ -63,7 +63,7 @@ a {
     border-radius: 28px;
     padding: 0 8px;
     margin: 5px;
-    /* border-color: #01579b;
-    color: #01579b; */
+    border-color: var(--v-primary-base);
+	color: var(--v-primary-base);
 }
 </style>
