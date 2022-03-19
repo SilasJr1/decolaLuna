@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Início</router-link>
+      <router-link to="/sobrenos">Sobre Nós</router-link>
+      <router-link to="/lista-verificacao">Lista de Sites para Verificação</router-link>
+      <router-link to="/fique-atento">Fique Atento</router-link>
+      <router-link to="/sugestoes-usuarios">Sugestões Usuários</router-link>
     </nav>
     <router-view/>
   </div>
