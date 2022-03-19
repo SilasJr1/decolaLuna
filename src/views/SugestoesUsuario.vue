@@ -138,7 +138,6 @@ export default {
             if(
             this.nome == "" ||
             this.email == ""||
-            this.referencia == ""||
             this.noticia == ""){
               return false;
             }else{
