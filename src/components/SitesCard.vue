@@ -3,16 +3,17 @@
         <a :href="site.site">
             <v-img :src="site.imagem" max-height="250" contain></v-img>
         </a>
-        <v-list-item three-line>
+        <v-list-item>
             <v-list-item-content>
                 <v-list-item-title class="text-h5 mb-1">
                     <a :href="site.site">{{ site.nome }}</a>
                 </v-list-item-title>
-                <v-list-item-subtitle>
-                    {{ site.descricao }}
-                </v-list-item-subtitle>
             </v-list-item-content>
         </v-list-item>
+
+		<v-card-text>
+			<div class="text--primary">{{ site.descricao }}</div>
+		</v-card-text>
 
         <v-card-actions>
             <span
@@ -40,12 +41,11 @@ export default {
 <style scoped>
 a {
     text-decoration: none;
-    /* color: #01579b !important; */
 }
 
-.v-list-item__subtitle {
-    display: block;
-    text-align: start;
+.v-card__text {
+    text-align: justify;
+	font-size: 0.95rem;
 }
 
 .v-card__actions {
