@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-row class="hackaton">
-       <h1 class="text-h5 text-left mb-3 mt-5"><strong>Sobre Nós:</strong></h1>
+      <h1 class="text-h5 text-left mb-3 mt-5"><strong>Sobre Nós:</strong></h1>
       <p>
         Foi desenvolvido em março de 2022 durante o Hackaton Decola Luna - 10º
         Edição realizado pela empresa Iteris.
@@ -48,6 +48,7 @@
                       dark
                       a
                       href="https://github.com/amandacbarreto"
+                      target="_blank"
                     >
                       Github
                     </v-btn>
@@ -59,6 +60,7 @@
                       dark
                       a
                       href="https://www.linkedin.com/in/amanda-barreto-5126a5136/"
+                      target="_blank"
                     >
                       LinkedIn
                     </v-btn>
@@ -91,6 +93,7 @@
                       dark
                       a
                       href="https://github.com/erika-hortencia"
+                      target="_blank"
                     >
                       Github
                     </v-btn>
@@ -102,6 +105,7 @@
                       dark
                       a
                       href="https://www.linkedin.com/in/érika-hp-cardoso"
+                      target="_blank"
                     >
                       LinkedIn
                     </v-btn>
@@ -134,6 +138,7 @@
                       dark
                       a
                       href="https://github.com/JainyMartins"
+                      target="_blank"
                     >
                       Github
                     </v-btn>
@@ -145,6 +150,7 @@
                       dark
                       a
                       href="https://www.linkedin.com/in/jainy-estefany-martins-173443b2/"
+                      target="_blank"
                     >
                       LinkedIn
                     </v-btn>
@@ -177,6 +183,7 @@
                       dark
                       a
                       href="https://github.com/nayara-vasconcelos"
+                      target="_blank"
                     >
                       Github
                     </v-btn>
@@ -188,6 +195,7 @@
                       dark
                       a
                       href="https://br.linkedin.com/in/nayara-vasconcelos"
+                      target="_blank"
                     >
                       LinkedIn
                     </v-btn>
@@ -220,6 +228,7 @@
                       dark
                       a
                       href="https://github.com/SilasJr1"
+                      target="_blank"
                     >
                       Github
                     </v-btn>
@@ -231,6 +240,7 @@
                       dark
                       a
                       href="https://www.linkedin.com/in/silasgoncalvesjr/"
+                      target="_blank"
                     >
                       LinkedIn
                     </v-btn>
@@ -243,13 +253,25 @@
       </template>
     </v-row>
     <v-row class="referencias">
-      <h2> Referências: </h2>
+      <h2>Referências:</h2>
       <ul>
-        <li><a href="https://sites.ufpe.br/dagi/2020/07/05/como-identificar-fake-news/">https://sites.ufpe.br/dagi/2020/07/05/como-identificar-fake-news/</a></li>
-        <li><a href="https://www.bbc.com/portuguese/internacional-60736675">https://www.bbc.com/portuguese/internacional-60736675</a></li>
+        <li>
+          <a
+            href="https://sites.ufpe.br/dagi/2020/07/05/como-identificar-fake-news/"
+            target="_blank"
+            >Como Identificar Fake News?</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.bbc.com/portuguese/internacional-60736675"
+            target="_blank"
+            >Guerra na Ucrânia: como identificar notícia falsa sobre o conflito
+            nas redes</a
+          >
+        </li>
       </ul>
     </v-row>
-
   </section>
 </template>
 
@@ -291,14 +313,15 @@ section {
 
 p {
   margin: auto;
+  text-align: justify;
 }
 
-h2{
+h2 {
   font-size: 25px;
 }
 
-.referencias{
- display: flex;
+.referencias {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;

@@ -2,7 +2,7 @@
   <div class="app-top-bar">
     <v-app-bar color="#01579B" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title class="pl-0">Menu</v-toolbar-title>
+      <v-toolbar-title class="pl-0">Deixa de Papo!</v-toolbar-title>
   <v-spacer></v-spacer>
 
   <v-switch class="mt-6"

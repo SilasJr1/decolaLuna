@@ -17,7 +17,7 @@
             required
           ></v-select>
 
-          <v-textarea v-model="noticia" hint="Invasão alienígena, outros" label="Fale mais sobre notícia suspeita*" :rules="noticiaRules" required>
+          <v-textarea v-model="noticia" hint="Invasão alienígena, outros" label="Fale mais sobre a notícia suspeita*" :rules="noticiaRules" required>
           </v-textarea>
 
       </v-form> 
