@@ -1,4 +1,4 @@
-# Deixa de Papo!
+# <h1 align="center">Deixa de Papo!</h1>
 
 
 <h3 align="center">O seu Web App para combate à Fake News!</h3>
@@ -13,23 +13,23 @@
 <h3 align="center">Sobre</h3>
 
 
-<h4 align="center">Qual o problema estamos resolvendo?</h4>
+<h4>Qual o problema estamos resolvendo?</h4>
 <p>Nossa aplicação tem o objetivo de conscientizar as pessoas através de fontes confiáveis que possuem ferramentas que facilitam o entendimento se as notícias são reais ou falsas.</p>
 
-<h4 align="center">Como a sua aplicação resolve este problema?</h4>
-<p align="center">Resolvemos o problema ao disponibilizar para o usuário: <br>
+<h4>Como a sua aplicação resolve este problema?</h4>
+<p>Resolvemos o problema ao disponibilizar para o usuário: <br>
 - Dicas sobre como se prevenir em relação às fake news <br>
 - Uma ferramenta de verificação de notícias <br>
 - Um feed com as principais notícias falsas sendo veiculadas no momento <br>
 - Um compilado de outras fontes confiáveis que o usuário pode acessar</p>
 
 
-<h4 align="center">Como a sua aplicação resolve este problema?</h3>
-<p align="center">Este projeto foi desenvolvido no Hackathon Decola, realizado pela empresa Iteris.</p>
+<h4>Como a sua aplicação resolve este problema?</h3>
+<p>Este projeto foi desenvolvido no Hackathon Decola, realizado pela empresa Iteris.</p>
 
 
-<h4 align="center">Qual o diferencial dela?</h3>
-<p align="center">Queremos ser uma ferramenta simplificada, que será a primeira fonte que o usuário irá buscar quando tiver dúvida em relação à veracidade de uma notícia. Nosso público são pessoas que tem interesse no tema, mas não necessariamente tem a disposição ou tempo para garimpar a veracidade da informação..</p>
+<h4>Qual o diferencial dela?</h3>
+<p>Queremos ser uma ferramenta simplificada, que será a primeira fonte que o usuário irá buscar quando tiver dúvida em relação à veracidade de uma notícia. Nosso público são pessoas que tem interesse no tema, mas não necessariamente tem a disposição ou tempo para garimpar a veracidade da informação..</p>
 
 
 
