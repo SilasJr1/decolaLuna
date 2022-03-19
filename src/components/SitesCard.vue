@@ -11,9 +11,9 @@
             </v-list-item-content>
         </v-list-item>
 
-		<v-card-text>
-			<div class="text--primary">{{ site.descricao }}</div>
-		</v-card-text>
+        <v-card-text>
+            <div class="text--primary">{{ site.descricao }}</div>
+        </v-card-text>
 
         <v-card-actions>
             <span
@@ -35,6 +35,23 @@ export default {
             required: true,
         },
     },
+    mounted() {
+        let elementos = document.getElementsByClassName("span-ferramenta");
+        console.log(this.$vuetify.theme.primary);
+        for (let i = 0; i < elementos.length; i++) {
+            let elemento = elementos[i];
+
+            if (elemento.textContent.includes("Checagem"))
+                elemento.style.color = "#43A047";
+            else if (elemento.textContent.includes("Pesquisa"))
+                elemento.style.color = "#9575CD";
+            else if (elemento.textContent.includes("Sugestões"))
+                elemento.style.color = "#42A5F5";
+            else if (elemento.textContent.includes("Contratação"))
+                elemento.style.color = "#FFA726";
+            else elemento.style.color = "#B71C1C";
+        }
+    },
 };
 </script>
 
@@ -45,7 +62,7 @@ a {
 
 .v-card__text {
     text-align: justify;
-	font-size: 0.95rem;
+    font-size: 0.95rem;
 }
 
 .v-card__actions {
@@ -63,7 +80,5 @@ a {
     border-radius: 28px;
     padding: 0 8px;
     margin: 5px;
-    border-color: var(--v-primary-base);
-	color: var(--v-primary-base);
 }
 </style>
