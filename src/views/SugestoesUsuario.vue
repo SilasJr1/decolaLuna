@@ -2,56 +2,53 @@
   
   <div class="CadastroSugestao">
     <h1 class="text-h5 text-left mb-3 mt-5">Ficou em dúvida se alguma notícia é <strong>fato</strong> ou <strong>fake</strong>? <br> Pergunte pra gente!</h1>
+        
         <v-form class="registro-box" ref="form" >
 
-          <p>Nome</p>
-          <v-text-field v-model="nome" label="Fulano de Tal" required>
+          <v-text-field v-model="nome" label="Nome*" required>
           </v-text-field>
 
-          <p>E-mail para contato</p>
-          <v-text-field v-model="email" label="E-mail" required>
+          <v-text-field v-model="email" label="E-mail para contato*" required>
           </v-text-field>
 
-          <p>Como você teve acesso a essa informação?</p>
-          <v-text-field v-model="referencia" label="WhatsApp, Facebook ou outros" required> 
-          <!--quando clica na label, o texto fica com uma margem, diferente das labels de nome e e-mail-->
-          </v-text-field>
+          <v-select
+            :items="['Redes Sociais','Jornais','Amigo','Outros']"
+            label="Como você teve acesso a essa informação?"
+            required
+          ></v-select>
 
-          <p>Diga a notícia que você está em dúvida</p>
-          <v-text-field v-model="noticia" label="" required>
+          <v-text-field v-model="noticia" hint="Invasão alienígena, outros" label="Diga a notícia que você está em dúvida*" required>
           <!--quando clica na label, o texto fica com uma margem, diferente das labels de nome e e-mail-->
           </v-text-field>            
             
-      </v-form>  
+      </v-form> 
       
       <div class="botoes">
-          <v-btn
-            class="botaoLimpar"
-            color=""
-            elevation="2"
-            medium
-            outlined
-            rounded
-            @click="limpar"
-          >
-            Limpar
-          </v-btn>
 
           <v-btn
-            class="botaoEnviar"
-            color=""
-            elevation="2"
-            medium
-            outlined
-            rounded
-            @click="limpar"
-          >      
-            Enviar
-          </v-btn>
+                  class="botaoLimpar"
+                  color="primary"
+                  dark
+                  v-bind="attrs"
+                  v-on="on"
+                  @click="limpar"
+                >
+                  Limpar
+            </v-btn>
+            <v-btn
+                  class="botaoEnviar"
+                  color="primary"
+                  dark
+                  v-bind="attrs"
+                  v-on="on"
+                  @click="enviar"
+                >
+                  Enviar
+          </v-btn>    
 
         </div>   
 
-        
+
         <div class="CaixaCadastro">
           <v-row justify="center">
             <v-dialog
@@ -71,79 +68,12 @@
               </template>
               <v-card>
                 <v-card-title>
-                  <span class="text-h5">User Profile</span>
+                  <span class="text-h5 center">Sugestão enviada!</span>
+                  <h5 class="textoDialog left">Obrigada por nos ajudar no combate às fake news!
+                    Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.
+                  </h5>
                 </v-card-title>
                 <v-card-text>
-                  <v-container>
-                    <v-row>
-                      <v-col
-                        cols="12"
-                        sm="6"
-                        md="4"
-                      >
-                        <v-text-field
-                          label="Legal first name*"
-                          required
-                        ></v-text-field>
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="6"
-                        md="4"
-                      >
-                        <v-text-field
-                          label="Legal middle name"
-                          hint="example of helper text only on focus"
-                        ></v-text-field>
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="6"
-                        md="4"
-                      >
-                        <v-text-field
-                          label="Legal last name*"
-                          hint="example of persistent helper text"
-                          persistent-hint
-                          required
-                        ></v-text-field>
-                      </v-col>
-                      <v-col cols="12">
-                        <v-text-field
-                          label="Email*"
-                          required
-                        ></v-text-field>
-                      </v-col>
-                      <v-col cols="12">
-                        <v-text-field
-                          label="Password*"
-                          type="password"
-                          required
-                        ></v-text-field>
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="6"
-                      >
-                        <v-select
-                          :items="['0-17', '18-29', '30-54', '54+']"
-                          label="Age*"
-                          required
-                        ></v-select>
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="6"
-                      >
-                        <v-autocomplete
-                          :items="['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']"
-                          label="Interests"
-                          multiple
-                        ></v-autocomplete>
-                      </v-col>
-                    </v-row>
-                  </v-container>
-                  <small>*indicates required field</small>
                 </v-card-text>
                 <v-card-actions>
                   <v-spacer></v-spacer>
@@ -152,14 +82,7 @@
                     text
                     @click="dialog = false"
                   >
-                    Close
-                  </v-btn>
-                  <v-btn
-                    color="blue darken-1"
-                    text
-                    @click="dialog = false"
-                  >
-                    Save
+                    Fechar
                   </v-btn>
                 </v-card-actions>
               </v-card>
@@ -198,7 +121,7 @@ export default {
             this.noticia = "";
         },
         
-        cadastrar() {
+        enviar() {
         },
     },
 };
@@ -219,5 +142,12 @@ export default {
     display: flex;
     justify-content: space-around;
     margin: 0px 20px;
+  }
+  .caixaDialogo{
+    margin: 20px;
+  }
+  
+  .caixaDialogo p{
+    text-decoration: none;
   }
 </style>
