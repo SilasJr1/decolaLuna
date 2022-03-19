@@ -1,6 +1,8 @@
 <template>
   <div>
+      <v-container>
       <h1 class="text-h5 text-left mb-3 mt-5 text-center"><strong>Você sabe o que são Fake News?</strong></h1>
+    </v-container>
     
     <v-container>
       <p class="text-justify">
