@@ -1,17 +1,14 @@
 <template>
   <div>
-    <v-container>
       <h1 class="text-h5 text-left mb-3 mt-5 text-center"><strong>Você sabe o que são Fake News?</strong></h1>
-    </v-container>
     
-    <spacer></spacer>
     <v-container>
       <p class="text-justify">
         O termo "Fake News" vem do inglês — fake (falso/falsa) e news (notícia) — e significa "notícia falsa". 
         Na prática,  são boatos, rumores ou notícias imprecisas publicadas geralmente na internet. 
         Esse tipo de conteúdo contribui para a proliferação de mentiras na sociedade, podendo ter sérias consequências.
       </p>
-      <p class="text-justify">Abaixo estão alguma dicas para se prevenir e evitar sair espalhando fake new por aí.</p>
+      <p class="text-justify">Abaixo estão alguma dicas para se prevenir e evitar sair espalhando fake news por aí.</p>
     </v-container>
     
     <v-container class="cards">
