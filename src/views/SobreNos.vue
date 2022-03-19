@@ -283,7 +283,6 @@ export default {
 
 <style scoped>
 section {
-  width: 80vw;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -304,7 +303,7 @@ section {
   /* margin-left: -30px; */
   display: flex;
   direction: row;
-  align-content: center;
+  justify-content: center;
 }
 
 .bloco:hover {
@@ -314,6 +313,8 @@ section {
 p {
   margin: auto;
   text-align: justify;
+  width: 85vw;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -328,6 +329,6 @@ h2 {
   justify-content: center;
   margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: -35px;
+  padding: 0 20px;
 }
 </style>
