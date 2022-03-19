@@ -5,7 +5,7 @@
     </v-container>
     
     <v-container>
-      <p class="text-justify">
+      <p class="texto text-justify">
         O termo "Fake News" vem do inglês — fake (falso/falsa) e news (notícia) — e significa "notícia falsa". 
         Na prática,  são boatos, rumores ou notícias imprecisas publicadas geralmente na internet. 
         Esse tipo de conteúdo contribui para a proliferação de mentiras na sociedade, podendo ter sérias consequências.
@@ -92,5 +92,7 @@ export default {
 </script>
 
 <style scoped>
-
+.texto{
+  margin-top: -20px;
+}
 </style>
