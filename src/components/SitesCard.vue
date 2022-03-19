@@ -37,7 +37,6 @@ export default {
     },
     mounted() {
         let elementos = document.getElementsByClassName("span-ferramenta");
-        console.log(this.$vuetify.theme.primary);
         for (let i = 0; i < elementos.length; i++) {
             let elemento = elementos[i];
 
