@@ -35,22 +35,8 @@
                 >
                   Limpar
             </v-btn>
-            <v-btn
-                  class="botaoEnviar"
-                  color="primary"
-                  dark
-                  v-bind="attrs"
-                  v-on="on"
-                  @click="enviar"
-                >
-                  Enviar
-          </v-btn>    
-
-        </div>   
-
-
-        <div class="CaixaCadastro">
-          <v-row justify="center">
+            
+            <div class="CaixaCadastro">
             <v-dialog
               v-model="dialog"
               persistent
@@ -62,8 +48,9 @@
                   dark
                   v-bind="attrs"
                   v-on="on"
+                  @click="enviar"
                 >
-                  Open Dialog
+                  Enviar
                 </v-btn>
               </template>
               <v-card>
@@ -87,7 +74,11 @@
                 </v-card-actions>
               </v-card>
             </v-dialog>
-          </v-row>
+
+        </div>   
+
+
+        
         </div>
 
 
@@ -150,4 +141,5 @@ export default {
   .caixaDialogo p{
     text-decoration: none;
   }
+
 </style>
