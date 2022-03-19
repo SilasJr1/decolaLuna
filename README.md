@@ -11,6 +11,7 @@
 ---
 <a id="sobre" align="center"></a>
 <h3 align="center">Sobre</h3>
+<h4 align="center">Este projeto foi desenvolvido no Hackathon Decola, realizado pela empresa Iteris.</h4>
 
 
 <h4>Qual o problema estamos resolvendo?</h4>
@@ -24,14 +25,16 @@
 - Um compilado de outras fontes confiáveis que o usuário pode acessar</p>
 
 
-<h4>Como a sua aplicação resolve este problema?</h3>
-<p>Este projeto foi desenvolvido no Hackathon Decola, realizado pela empresa Iteris.</p>
-
-
 <h4>Qual o diferencial dela?</h3>
-<p>Queremos ser uma ferramenta simplificada, que será a primeira fonte que o usuário irá buscar quando tiver dúvida em relação à veracidade de uma notícia. Nosso público são pessoas que tem interesse no tema, mas não necessariamente tem a disposição ou tempo para garimpar a veracidade da informação..</p>
+<p>Queremos ser uma ferramenta simplificada, que será a primeira fonte que o usuário irá buscar quando tiver dúvida em relação à veracidade de uma notícia. Nosso público são pessoas que tem interesse no tema, mas não necessariamente tem a disposição ou tempo para garimpar a veracidade da informação.</p>
 
+<h4>Funcionalidades</h3>
 
+<p>Conscientização: Nossa tela inicial apresenta o que são Fake News e como podemos combatê-las.
+Lista de sites: Quer conhecer fontes confiáveis para checar notícias? Separamos algumas ferramentas nas quais você pode confiar.
+Sugestões do usuário: Recebeu alguma notícia e não sabe se é falsa ou verdadeira? Nosso WebApp recebe a sua dúvida e analisa para você.
+Fique atento: Saiba mais sobre as principais notícias da semana e se elas são reais ou falsas.
+Sobre Nós: Conheça mais sobre a Hackathon e os desenvolvedores.</p>
 
 <a id="tecnologias" align="center"></a>
 🛠 Tecnologias
