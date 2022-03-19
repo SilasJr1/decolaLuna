@@ -22,22 +22,7 @@
           </v-text-field>   
 
 
-        <v-container fluid>
-        <v-row>
-          <v-col cols="12">
-            <v-textarea
-              v-model="form.bio"
-              color="teal"
-            >
-              <template v-slot:label>
-                <div>
-                  Bio <small>(optional)</small>
-                </div>
-              </template>
-            </v-textarea>
-          </v-col> 
-        </v-row>
-        </v-container>      
+           
             
       </v-form> 
       
@@ -74,11 +59,10 @@
               <v-card>
                 <v-card-title>
                   <span class="text-h5 center">Sugestão enviada!</span>
-                  <h5 class="text-s1 left">Obrigada por nos ajudar no combate às fake news!
-                    Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.
-                  </h5>
                 </v-card-title>
                 <v-card-text>
+                  <div class="text--primary">Obrigada por nos ajudar no combate às fake news!
+                    Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.</div>
                 </v-card-text>
                 <v-card-actions>
                   <v-spacer></v-spacer>
