@@ -17,12 +17,9 @@
             required
           ></v-select>
 
-          <v-text-field v-model="noticia" hint="Invasão alienígena, outros" label="Diga a notícia que você está em dúvida*" required>
-          <!--quando clica na label, o texto fica com uma margem, diferente das labels de nome e e-mail-->
-          </v-text-field> 
+          <v-textarea v-model="noticia" hint="Invasão alienígena, outros" label="Fale mais sobre notícia suspeita*" required>
+          </v-textarea>
 
-          
-            
       </v-form> 
       
       <v-container>
