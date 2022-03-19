@@ -1,4 +1,4 @@
-# app-fake-news
+# Deixa de Papo!
 
 ## Project setup
 ```

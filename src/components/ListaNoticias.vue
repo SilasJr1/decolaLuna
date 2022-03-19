@@ -21,7 +21,6 @@
       </v-card-subtitle>
       <v-card-text class="text--primary">
         <div>
-          <!-- RESUMO -->
           {{ noticia.resumo }}
         </div>
       </v-card-text>
@@ -68,7 +67,8 @@ export default {
 
 <style scoped>
 .noticia-card {
-  margin-bottom: 1%;
+  margin-bottom: 3%;
+  margin-top: 3%,
 }
 .v-card__text {
   text-align: justify;

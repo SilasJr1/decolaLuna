@@ -18,24 +18,12 @@ export default {
   }
 }
 
-// Título: Confira aqui algumas notícias mais lidas
-
-// Ideia:
-// Sessão com duas colunas de cards com notícias verdadeiras e falsas
-//   imagem:
-//   titulo:
-//   resumo:
-//   fatoOuFake:
-//   link:
-
-// Componentes:
-// Cards das manchetes
-
 </script>
 
 <style scoped>
 .noticias {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .texto3{
