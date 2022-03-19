@@ -37,7 +37,6 @@
               </v-btn>
               
               <div class="CaixaCadastro">
-              <div v-if="confereCadastroCompleto()">
                 <v-dialog 
                   v-model="dialog"
                   persistent
@@ -55,13 +54,25 @@
                     </v-btn>
                   </template>
                   <v-card >
-                    <v-card-title>
-                      <h5 class="text-h5 center">Sugestão enviada!</h5>
-                    </v-card-title>
-                    <v-card-text>
-                      <div class="text--primary">Obrigada por nos ajudar no combate às fake news!
-                        Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.</div>
-                    </v-card-text>
+                    
+                    <div v-if="confereCadastroCompleto()">
+                      <v-card-title>
+                        <h5 class="text-h5 center">Sugestão enviada!</h5>
+                      </v-card-title>
+                      <v-card-text>
+                        <div class="text--primary">Obrigada por nos ajudar no combate às fake news!
+                          Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.</div>
+                      </v-card-text>
+                    </div>
+                    <div v-else>
+                      <v-card-title>
+                      <h5 class="text-h5 center">Cadastro incompleto!</h5>
+                      </v-card-title>
+                      <v-card-text>
+                        <div class="text--primary">Por favor, preencha as informações obrigatórias.</div>
+                      </v-card-text>
+                    </div>
+
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn
@@ -75,22 +86,10 @@
                   </v-card>
                 </v-dialog>
               </div>
-              <div v-else>
-                <v-btn
-                      color="primary"
-                      dark
-                      v-bind="attrs"
-                      v-on="on"
-                    >
-                      Enviar
-                    </v-btn>
-              </div>
-
-          </div>  
           
-          </div>
+          </div> <!--botoes-->
       </v-container>
-    </div>
+    </div> <!--cadastrosugestao-->
   </v-container>
 </template>
 
@@ -136,7 +135,15 @@ export default {
         },
 
         confereCadastroCompleto(){
-          return true;
+            if(
+            this.nome == "" ||
+            this.email == ""||
+            this.referencia == ""||
+            this.noticia == ""){
+              return false;
+            }else{
+              return true;
+            }
         },
     },
 };
