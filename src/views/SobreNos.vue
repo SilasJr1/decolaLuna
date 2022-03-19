@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-row class="hackaton">
-      <h1 class="titulo1">O projeto:</h1>
+      <h1>Sobre Nós:</h1>
       <p>
         Foi desenvolvido em março de 2022 durante o Hackaton Decola Luna - 10º
         Edição realizado pela empresa Iteris.
@@ -17,13 +17,14 @@
         fake news.
       </p>
       <v-img
+        id="logo"
         class="logoiteris"
         src="https://www.iteris.com.br/Iteris.Site.Cms.Theme/img/logo.svg"
         max-height="300"
         max-width="300"
       ></v-img>
     </v-row>
-    <v-row class="desenvolvedores mt-8">
+    <v-row class="desenvolvedores">
       <template>
 
         <v-card class="bloco" width="380" height="350" tile>
@@ -112,7 +113,7 @@
             <v-col align-self="start" class="mt-4" cols="12">
               <v-avatar class="profile" color="grey" size="150">
                 <v-img
-                  src="https://avatars.githubusercontent.com/u/97711262?v=4"
+                  src="https://avatars.githubusercontent.com/u/89042594?v=4"
                 ></v-img>
               </v-avatar>
             </v-col>
@@ -120,13 +121,13 @@
               <v-list-item color="black">
                 <v-list-item-content>
                   <v-list-item-title class="text-h6">
-                    Amanda Cristina Souza Barreto
+                    Nayara Priscilla de Almeida Vasconcelos
                   </v-list-item-title>
                   <v-list-item-subtitle class="text-center mt-2">
-                    <v-btn rounded color="#424242" dark> Github </v-btn>
+                    <v-btn rounded color="#424242" dark a href="https://github.com/nayara-vasconcelos"> Github </v-btn>
                   </v-list-item-subtitle>
                   <v-list-item-subtitle class="text-center mt-2">
-                    <v-btn rounded color="#01579B" dark> LinkedIn </v-btn>
+                    <v-btn rounded color="#01579B" dark a href="https://br.linkedin.com/in/nayara-vasconcelos"> LinkedIn </v-btn>
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -139,7 +140,7 @@
             <v-col align-self="start" class="mt-4" cols="12">
               <v-avatar class="profile" color="grey" size="150">
                 <v-img
-                  src="https://avatars.githubusercontent.com/u/97711262?v=4"
+                  src="https://avatars.githubusercontent.com/u/62074890?v=4"
                 ></v-img>
               </v-avatar>
             </v-col>
@@ -147,29 +148,60 @@
               <v-list-item color="black">
                 <v-list-item-content>
                   <v-list-item-title class="text-h6">
-                    Amanda Cristina Souza Barreto
+                    Silas Henrique Gonçalves Júnior
                   </v-list-item-title>
                   <v-list-item-subtitle class="text-center mt-2">
-                    <v-btn rounded color="#424242" dark> Github </v-btn>
+                    <v-btn rounded color="#424242" dark a href="https://github.com/SilasJr1"> Github </v-btn>
                   </v-list-item-subtitle>
                   <v-list-item-subtitle class="text-center mt-2">
-                    <v-btn rounded color="#01579B" dark> LinkedIn </v-btn>
+                    <v-btn rounded color="#01579B" dark a href="https://www.linkedin.com/in/silasgoncalvesjr/"> LinkedIn </v-btn>
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
             </v-col>
           </v-row>
         </v-card>
-      </template></v-row
-    >
+      </template></v-row>
   </section>
 </template>
 
-<style scoped>
-.titulo1 {
-  text-align: center;
+<script>
+export default {
+  name: 'SobreNos',
 }
-.img1 {
-  margin-top: 5px;
+</script>
+
+<style scoped>
+  section {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .hackaton{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .desenvolvedores {
+    margin-top: 40px;
+    margin-left: -30px;
+    display: flex;
+    direction: row;
+    align-content: center;
+  }
+  
+  v-card.desenvolvedores hover{
+    background-color: #01579B
+  }
+  
+  #logo{
+  align-items: center;
 }
 </style>
