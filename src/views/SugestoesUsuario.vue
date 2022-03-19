@@ -55,7 +55,7 @@
                 </template>
                 <v-card>
                   <v-card-title>
-                    <span class="text-h5 center">Sugestão enviada!</span>
+                    <h5 class="text-h5 center">Sugestão enviada!</h5>
                   </v-card-title>
                   <v-card-text>
                     <div class="text--primary">Obrigada por nos ajudar no combate às fake news!
@@ -66,7 +66,7 @@
                     <v-btn
                       color="blue darken-1"
                       text
-                      @click="dialog = false"
+                      @click= "fechaDialog"
                     >
                       Fechar
                     </v-btn>
@@ -90,17 +90,11 @@ export default {
             nome: "",
             email: "",
             referencia: "",
-            noticia:""
+            noticia:"",
+            dialog: false
         };
     },
     methods: {
-        /*push() {
-          this.loading=true
-          setTimeout(()=>{
-          this.$router.push('/analisecadastro')
-          },1000)
-           
-        },*/
         limpar() {
             this.nome = "";
             this.email = "";
@@ -109,6 +103,17 @@ export default {
         },
         
         enviar() {
+        },
+
+        fechaDialog(){
+          this.dialog = false;
+          this.limpar();
+        },
+
+        confereCadastroCompleto(){
+          if (this.nome && this.email && this.noticia != null){
+            return true;
+          }
         },
     },
 };
@@ -130,12 +135,4 @@ export default {
     justify-content: space-around;
     margin: 0px 20px;
   }
-  .caixaDialogo{
-    margin: 20px;
-  }
-  
-  .caixaDialogo p{
-    text-decoration: none;
-  }
-
 </style>
