@@ -5,10 +5,10 @@
         
         <v-form class="registro-box" ref="form">
 
-          <v-text-field v-model="nome" label="Nome*" required>
+          <v-text-field v-model="nome" label="Nome*" :rules="nomeRules" required>
           </v-text-field>
 
-          <v-text-field v-model="email" label="E-mail para contato*" required>
+          <v-text-field v-model="email" label="E-mail para contato*" :rules="emailRules" required>
           </v-text-field>
 
           <v-select
@@ -17,7 +17,7 @@
             required
           ></v-select>
 
-          <v-textarea v-model="noticia" hint="Invasão alienígena, outros" label="Fale mais sobre notícia suspeita*" required>
+          <v-textarea v-model="noticia" hint="Invasão alienígena, outros" label="Fale mais sobre notícia suspeita*" :rules="noticiaRules" required>
           </v-textarea>
 
       </v-form> 
@@ -37,42 +37,54 @@
               </v-btn>
               
               <div class="CaixaCadastro">
-              <v-dialog
-                v-model="dialog"
-                persistent
-                max-width="600px"
-              >
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    color="primary"
-                    dark
-                    v-bind="attrs"
-                    v-on="on"
-                    @click="enviar"
-                  >
-                    Enviar
-                  </v-btn>
-                </template>
-                <v-card>
-                  <v-card-title>
-                    <h5 class="text-h5 center">Sugestão enviada!</h5>
-                  </v-card-title>
-                  <v-card-text>
-                    <div class="text--primary">Obrigada por nos ajudar no combate às fake news!
-                      Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.</div>
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
+              <div v-if="confereCadastroCompleto()">
+                <v-dialog 
+                  v-model="dialog"
+                  persistent
+                  max-width="600px"
+                >
+                  <template v-slot:activator="{ on, attrs }" >
                     <v-btn
-                      color="blue darken-1"
-                      text
-                      @click= "fechaDialog"
+                      color="primary"
+                      dark
+                      v-bind="attrs"
+                      v-on="on"
+                      @click="enviar"
                     >
-                      Fechar
+                      Enviar
                     </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-dialog>
+                  </template>
+                  <v-card >
+                    <v-card-title>
+                      <h5 class="text-h5 center">Sugestão enviada!</h5>
+                    </v-card-title>
+                    <v-card-text>
+                      <div class="text--primary">Obrigada por nos ajudar no combate às fake news!
+                        Iremos analisar a sua sugestão e quando verificarmos os fatos, entraremos em contato.</div>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click= "fechaDialog"
+                      >
+                        Fechar
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
+              </div>
+              <div v-else>
+                <v-btn
+                      color="primary"
+                      dark
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                      Enviar
+                    </v-btn>
+              </div>
 
           </div>  
           
@@ -86,11 +98,24 @@
 export default {
     name: "CadastroSugestao",
     data() {
+        
         return {
-            nome: "",
-            email: "",
-            referencia: "",
-            noticia:"",
+          
+            valid: false,
+            nome: '',
+            nomeRules: [
+              v => !!v || 'Este campo é obrigatório',
+            ],
+            email: '',
+            emailRules: [
+              v => !!v || 'Este campo é obrigatório',
+              v => /.+@.+/.test(v) || 'Este E-mail não é válido',
+            ],
+            referencia: '',
+            noticia:'',
+            noticiaRules: [
+              v => !!v || 'Este campo é obrigatório',
+            ],
             dialog: false
         };
     },
@@ -111,7 +136,7 @@ export default {
         },
 
         confereCadastroCompleto(){
-          if (this.nome && this.email && this.noticia != null){
+          if (this.nome == null){
             return true;
           }
         },
