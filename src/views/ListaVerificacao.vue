@@ -1,6 +1,6 @@
 <template>
     <v-container class="sites-lista">
-        <h2 class="text-h5 text-center mb-3 mt-5">Lista de sites para verificação de notícias</h2>
+        <h2 class="text-h5 text-center my-5"><b>Lista de sites para verificação de notícias</b></h2>
 		<div v-for="site of sitesLista" :key="site.id">
 			<SitesCard :site="site" />
 		</div>
@@ -28,9 +28,5 @@ export default {
 </script>
 
 <style scoped>
-
-h2 {
-	margin-bottom: 20px;
-}
 
 </style>
